@@ -8,7 +8,6 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorManager
 import android.location.Location
-import android.location.LocationManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -37,7 +36,7 @@ class CardScrollingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val locationPermissionCode = 2
-        var locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        //var locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         //if ((ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)) {
         //    ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), locationPermissionCode)
         //}
